@@ -1,0 +1,6 @@
+﻿requests
+numpy
+matplotlib
+arxiv
+pandas
+scipy
