@@ -124,7 +124,3 @@ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 ```
 
-
-⭐ **Star this repo if you find it useful!**
-
-📖 **Full technical report:** `docs/technical_report.pdf`
