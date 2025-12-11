@@ -5,7 +5,7 @@ Multi-agent reinforcement learning system that learns optimal research paper ret
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Project Overview
+## Project Overview
 
 ResearchMind is an intelligent research assistant powered by reinforcement learning. Instead of using fixed search rules, the system learns through trial and error to:
 
@@ -21,8 +21,8 @@ ResearchMind is an intelligent research assistant powered by reinforcement learn
 - **Cohen's d = 0.94** (large effect size)
 - **+33% synthesis quality** improvement
 
-## 🏗️ Architecture
-![System Architecture](system_architecture.png)
+## Architecture
+![System Architecture](system_architecture_diag.png)
 
 The system uses **two RL agents working together**:
 
@@ -31,7 +31,7 @@ The system uses **two RL agents working together**:
 
 A multi-agent coordinator combines their decisions through voting, dynamic task allocation, and fallback logic.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -86,7 +86,7 @@ After running, the `results/` folder contains:
 | `comprehensive_validation.txt` | Statistical tests (t-test, CI) |
 | `theoretical_analysis.txt` | RL theory analysis |
 
-## 🧠 RL Methods Implemented
+## RL Methods Implemented
 
 ### 1. Value-Based Learning (Q-Learning)
 - **State:** (topic, difficulty)
@@ -128,7 +128,7 @@ research-assistant-rl/
 └── requirements.txt         # Python dependencies
 ```
 
-## 🔬 Experimental Setup
+## Experimental Setup
 
 - **Baseline:** 30 episodes with random strategies
 - **Training:** 200 episodes with RL learning enabled
@@ -161,7 +161,7 @@ research-assistant-rl/
 - **Effect size:** 0.4626 (medium)
 - **95% CI:** Baseline [6.134, 8.062], RL [7.926, 9.195]
 
-## 🛠️ Custom Tools Developed
+## Custom Tools Developed
 
 ### PaperSynthesizer
 **Location:** `src/synthesis.py`
@@ -182,7 +182,7 @@ research-assistant-rl/
 - Fallback logic with 3-tier error handling
 - Communication channels between agents
 
-## 🔧 Configuration
+## Configuration
 
 ### Hyperparameters
 
@@ -205,7 +205,7 @@ No API keys required! Uses free tiers:
 - **OpenAlex:** 10 requests/second
 - **arXiv:** No strict limit (polite: 20/min)
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 # Run only experiments
@@ -221,7 +221,7 @@ python experiments/validation.py
 python experiments/theoretical_analysis.py
 ```
 
-## 📊 Sample Learning Progress
+## Sample Learning Progress
 
 **Query:** "transformer attention mechanism"
 
@@ -233,14 +233,14 @@ python experiments/theoretical_analysis.py
 
 **Key Learning:** Agent autonomously discovered that "specific" queries with arXiv yield best results for ML topics.
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 - Statistical significance marginal (p=0.055) due to small sample size (30 baseline episodes)
 - Fixed learning rate (α=0.1) - should decay over time for proven convergence
 - Keyword-based relevance scoring (semantic embeddings would be better)
 - English-language papers only (OpenAlex/arXiv bias)
 
-## 🔮 Future Work
+## Future Work
 
 **Immediate Extensions:**
 - Policy gradient methods (PPO, REINFORCE)
@@ -253,11 +253,11 @@ python experiments/theoretical_analysis.py
 - Human-in-the-loop feedback
 - Web deployment for researchers
 
-## 🤝 Contributing
+## Contributing
 
 This is an academic project. Contributions, issues, and feature requests are welcome!
 
-## 📚 References
+## References
 
 **RL Algorithms:**
 - Watkins & Dayan (1992) - Q-Learning convergence
@@ -269,7 +269,7 @@ This is an academic project. Contributions, issues, and feature requests are wel
 - [arXiv](https://arxiv.org/) - Preprint repository
 
 
-## 📜 License
+## License
 
 MIT License
 
